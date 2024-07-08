@@ -5,65 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <img src="avatar.jpg" alt="Юрий Платицын" width="150">
-    <h1>Платицын Юрий Михайлович</h1>
-    <p>Я <strong>юрист</strong>. Работаю в на государственной службе. Пытаюсь научиться <em>программировать.</em></p>
-    <h2>Список социальных сетей</h2>
-    <a href="http://vk.com/id737519112" target="_blank">Вконтакте</a>
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Программирование</li>
-        <li>Йога</li>
-        <li>Пешие прогулки</li>
-    </ol>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Фонд</td>
-                <td>Главный юрисконсульт</td>
-                <td>2002-2008</td>
-            </tr>
-            <tr>
-                <td>Банк</td>
-                <td>Главный юрисконсульт</td>
-                <td>2008-2019</td>
-            </tr>
-            <tr>
-                <td>Госслужба</td>
-                <td>Главный специалист</td>
-                <td>2020-настоящее время</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+    <div class="container">
+        <div class="info">
+            <img src="avatar.jpg" alt="Юрий Платицын" class="avatar">
+            <div class="info-text">
+                <h1>Платицын Юрий Михайлович</h1>
+                <p>Я <strong>юрист</strong>. Работаю на государственной службе. Пытаюсь научиться
+                    <em>программировать.</em>
+                </p>
+                <h3>Список социальных сетей</h3>
+                <a href="http://vk.com/id737519112" target="_blank">Вконтакте</a>
+                <a href="#" target="_blank">YouTube</a>
+                <a href="#" target="_blank" class="link">Одноклассники</a>
+            </div>
         </div>
-        <br>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите e-mail">
+        <div class="card block-1">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Программирование</li>
+                <li>Йога</li>
+                <li>Пешие прогулки</li>
+            </ol>
         </div>
-        <br>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+        <div class="card block-2">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Фонд</td>
+                        <td>Главный юрисконсульт</td>
+                        <td>2002-2008</td>
+                    </tr>
+                    <tr>
+                        <td>Банк</td>
+                        <td>Главный юрисконсульт</td>
+                        <td>2008-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Госслужба</td>
+                        <td>Главный специалист</td>
+                        <td>2020-настоящее время</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <button type="submit">Отправить</button>
-    </form>
+        <div class="card">
+            <form action="/" class="form">
+                <h2>Связаться со мной</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите e-mail">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
